@@ -80,7 +80,6 @@ def grade_student(answers):
 def calculate_statistics(scores):
     """
     Task 3: Tính các thống kê: trung bình, cao nhất, thấp nhất, miền giá trị, trung vị.
-    Sử dụng numpy để tính toán.
     """
     scores_array = np.array(scores)
     mean_score = np.mean(scores_array)
@@ -110,7 +109,6 @@ def print_report(valid_count, invalid_count, scores):
 def write_results(filename_base, student_scores):
     """
     Task 4: Ghi kết quả vào file <filename_base>_grades.txt.
-    Sử dụng pandas DataFrame để xuất kết quả.
     """
     output_filename = f"{filename_base}_grades.txt"
     df = pd.DataFrame(student_scores, columns=["StudentID", "Score"])
@@ -147,4 +145,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
